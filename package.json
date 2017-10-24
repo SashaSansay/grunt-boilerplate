@@ -1,0 +1,42 @@
+{
+  "name": "grunt-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for grunt apps",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SashaSansay/grunt-boilerplate.git"
+  },
+  "author": "SashaSansay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SashaSansay/grunt-boilerplate/issues"
+  },
+  "homepage": "https://github.com/SashaSansay/grunt-boilerplate#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "bs-html-injector": "^3.0.3",
+    "cssnano": "^3.10.0",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-newer": "^1.3.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-sass": "^2.0.0",
+    "jshint-stylish": "^2.2.1",
+    "load-grunt-config": "^0.19.2",
+    "postcss-autoreset": "^2.0.1",
+    "postcss-initial": "^2.0.0",
+    "pug": "^2.0.0-rc.4",
+    "pug-inheritance": "^3.0.0-beta.2",
+    "time-grunt": "^1.4.0"
+  }
+}

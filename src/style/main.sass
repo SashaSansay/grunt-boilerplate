@@ -1,0 +1,13 @@
+@import "component/fonts"
+@import "component/typo"
+
+@function calcRem($size)
+  $remSize: $size / 16px
+  @return #{$remSize}rem
+
+body
+  all: initial
+  font-family: 'MetaNormalLFC', Arial, sans-serif
+
+.test
+  color: black
