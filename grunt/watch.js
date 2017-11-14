@@ -15,7 +15,7 @@ module.exports = {
 
     scripts_assets: {
         files: [
-            'app/script/*.js'
+            'src/assets/script/*.js'
         ],
         tasks: [
             'uglify:assets',
@@ -28,6 +28,7 @@ module.exports = {
             'src/style/**/*.sass'
         ],
         tasks: [
+            'sass_globbing',
             'sass:dev',
             'postcss',
             'bsReload:css'
@@ -49,7 +50,7 @@ module.exports = {
             'src/html/component/**/*.pug'
         ],
         tasks: [
-            'pug:component'
+            'pug:compile'
         ]
     },
 
@@ -59,6 +60,14 @@ module.exports = {
         ],
         tasks: [
             'newer:copy'
+        ]
+    },
+    svg: {
+        files: [
+            'src/assets/icons/**.**'
+        ],
+        tasks: [
+            'svgstore'
         ]
     }
 };

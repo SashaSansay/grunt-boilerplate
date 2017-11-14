@@ -8,11 +8,21 @@ module.exports = {
                 reset: {
                     margin: 0,
                     padding: 0,
-                    borderRadius: 0
+                    borderRadius: 0,
+                    textDecoration: 0,
+                    border: 0
+                },
+                rulesMatcher: function(rule) {
+                    return !rule.selector.match(/(--|:|\+|>|~| )/);
                 }
             }),
             require('autoprefixer')({browsers: 'last 20 versions'}),// add vendor prefixes
-            require('cssnano')()
+            require('cssnano')({
+                preset: 'default',
+                zIndex: false,
+                sourcemap: true,
+                safe: true
+            })
         ]
     },
     dist: {

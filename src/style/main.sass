@@ -1,13 +1,34 @@
+@import "component/etc/color"
+@import "component/etc/screenSizes"
 @import "component/fonts"
 @import "component/typo"
 
 @function calcRem($size)
-  $remSize: $size / 16px
+  $remSize: $size / 22px
   @return #{$remSize}rem
+
+@mixin clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+*
+  box-sizing: border-box
+
+html
+  font-size: 22px
 
 body
   all: initial
-  font-family: 'MetaNormalLFC', Arial, sans-serif
+  @include fontNormal()
+  font-size: 1rem
+  background: #fff
+  color: $black
 
-.test
-  color: black
+@import "blocks"
+@import "elements"
+
+@media all and (max-width: $tabletWidth)
+  html
+    font-size: 22px!important
