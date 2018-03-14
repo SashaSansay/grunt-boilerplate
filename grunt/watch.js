@@ -56,7 +56,7 @@ module.exports = {
 
     copy: {
         files: [
-            'src/assets/**/*', '!src/common/new/assets/**/*.js'
+            'src/assets/**/*', '!src/common/assets/**/*.js'
         ],
         tasks: [
             'newer:copy'

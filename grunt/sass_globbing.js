@@ -6,7 +6,7 @@ module.exports = {
         },
         options: {
             useSingleQuotes: true,
-            signature: '// vtb europe !'
+            signature: '// roky !'
         }
     }
 };
