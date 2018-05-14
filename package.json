@@ -4,7 +4,8 @@
   "description": "Boilerplate for grunt apps",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1" ,
+    "dev" : "grunt dev"
   },
   "repository": {
     "type": "git",
