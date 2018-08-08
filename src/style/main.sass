@@ -3,8 +3,10 @@
 @import "component/fonts"
 @import "component/typo"
 
-@function calcRem($size)
-  $remSize: $size / 22px
+$baseFontSize: 16px
+
+@function rem($size)
+  $remSize: $size / $baseFontSize
   @return #{$remSize}rem
 
 @mixin clearfix
@@ -17,7 +19,7 @@
   box-sizing: border-box
 
 html
-  font-size: 22px
+  font-size: $baseFontSize
 
 body
   all: initial
@@ -31,4 +33,4 @@ body
 
 @media all and (max-width: $tabletWidth)
   html
-    font-size: 22px!important
+    font-size: $baseFontSize!important

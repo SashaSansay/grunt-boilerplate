@@ -5,9 +5,10 @@ module.exports = function(grunt) {
         jitGrunt: true
     });
 
-    grunt.registerTask('dev', ['browserSync', 'watch']);
+    grunt.registerTask('dev', ['clean','build','browserSync', 'watch']);
 
     grunt.registerTask('build', [
+        'clean',
         'uglify:main',//compress main js
         'uglify:assets',//compress vendor js
         'sass_globbing',//globbing blocks and elements sass
