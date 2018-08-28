@@ -1,9 +1,44 @@
 #Grunt Boilerplate
 
+---
+#EN doc
+Template for web apps using grunt + sass + postcss + pug + Browsersync + postcss-auto-reset
+
+Commands: 
+`grunt dev` or `npm run dev` – start development mode
+
+`grunt build` or `npm run build` – build production version
+
+##Folders structure
+```
+project 
+│    app (build files here)
+│    grunt (grunt configs folder)
+│    
+└────src
+     │    assets
+     │    │    fonts (fonts copying to app/common/fonts)
+     │    │    images (images copying to app/common/images)
+     │    │    script (script assets copying to app/common/images)
+     │    │    icons (svg icons builds in sprite file app/common/icons/icons.svg with prefix 'icon-')
+     │    │    
+     │    html (pug)
+     │    script (js scripts)
+     │    style (styles)
+     │    └────component
+     │         │     blocks (blocks folder src/style/_blocks.sass)
+     │         └─────elements (element folder src/style/_elements.sass)
+     
+```
+
+---
+#RU doc
 Шаблон приложений с использованием grunt + sass + postcss + pug + Browsersync
 
 Для старта команда 
 `grunt dev`
+или 
+`npm run dev`
 
 Сборка production версии
 `grunt build`
