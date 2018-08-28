@@ -1,7 +1,7 @@
-#Grunt Boilerplate
+# Grunt Boilerplate
 
 ---
-#EN doc
+# EN doc
 Template for web apps using grunt + sass + postcss + pug + Browsersync + postcss-auto-reset
 
 Commands: 
@@ -9,7 +9,7 @@ Commands:
 
 `grunt build` or `npm run build` – build production version
 
-##Folders structure
+## Folders structure
 ```
 project 
 │    app (build files here)
@@ -32,7 +32,7 @@ project
 ```
 
 ---
-#RU doc
+# RU doc
 Шаблон приложений с использованием grunt + sass + postcss + pug + Browsersync
 
 Для старта команда 
@@ -43,12 +43,12 @@ project
 Сборка production версии
 `grunt build`
 
-#sass, css
+# sass, css
 В шаблоне настроен css auto-reset для сброса некоторых дефолтных значений. Настройка 
 плагина хранится в файле `grunt/postcss.js`.
 
 
-#Структура папок
+# Структура папок
 
 ```
 project 
